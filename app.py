@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
+import os  # Glömde importera os för att använda miljövariabler
 
 # Skapa appen och konfigurera databasen
 app = Flask(__name__)
@@ -41,4 +42,4 @@ def index():
 # Starta applikationen
 if __name__ == "__main__":
     create_db()  # Skapa databasen när appen startar
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))  # Kör appen på rätt port
