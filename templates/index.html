@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to Word Counter!</h1>
+
+    {% if 'username' not in session %}
+    <form action="/" method="POST">
+        <label for="username">Enter your username:</label>
+        <input type="text" name="username" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    {% endif %}
+
+    <form action="/" method="POST">
+        <label for="word">Enter a word:</label>
+        <input type="text" name="word" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p>{{ message }}</p>
+</body>
+</html>

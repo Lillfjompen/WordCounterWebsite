@@ -1,0 +1,66 @@
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Styling for the title */
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Form and input field */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for the input field */
+input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styling for the submit button */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button changes color on hover */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the message */
+p {
+    font-size: 1.1em;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
